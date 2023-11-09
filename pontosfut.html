@@ -16,14 +16,18 @@
       pulaLinha();
     }
 
+    function calculaPontos(vitorias, empates){
+        return (vitorias * 3) + empates;
+    }
+
     var vitorias = parseInt(prompt("Número de Vitórias: "));
     var empates = parseInt(prompt("Número de empates: "));
-    var quantidadePontos = (vitorias * 3 )+ empates
+    quantidadePontos = calculaPontos(vitorias, empates)
     if(quantidadePontos < 45){
       mostra("Nosso time caiu: " + quantidadePontos)
     }
     if(quantidadePontos == 45){
-      mostra("Nosso time se manteu na Séria A: " + quantidadePontos)
+      mostra("Nosso time se manteu na Séria A: " + quantidadePontos )
     }
     if(quantidadePontos > 55){
       mostra("Nosso time tá na Liberta: " + quantidadePontos)
