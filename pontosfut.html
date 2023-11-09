@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futebol</title>
+</head>
+<body>
+  <script>
+    function pulaLinha(){
+      document.write("<hr>")
+    }
+
+    function mostra(texto){
+      document.write(texto);
+      pulaLinha();
+    }
+
+    var vitorias = parseInt(prompt("Número de Vitórias: "));
+    var empates = parseInt(prompt("Número de empates: "));
+    var quantidadePontos = (vitorias * 3 )+ empates
+    if(quantidadePontos < 45){
+      mostra("Nosso time caiu: " + quantidadePontos)
+    }
+    if(quantidadePontos == 45){
+      mostra("Nosso time se manteu na Séria A: " + quantidadePontos)
+    }
+    if(quantidadePontos > 55){
+      mostra("Nosso time tá na Liberta: " + quantidadePontos)
+    }
+    if(quantidadePontos > 75){
+      mostra("CAMPEÃO " + quantidadePontos)
+    }
+  </script>
+</body>
+</html>
