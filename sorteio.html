@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteio</title>
+</head>
+<body>
+  
+</body>
+<script>
+  function pulaLinha(){
+    document.write("<hr>");
+  }
+  function mostraTexto(texto){
+    document.write(texto);
+    pulaLinha();
+  }
+
+  function sorteio(numero){
+    var numeroPensado = Math.round(Math.random() * numero)
+    return numeroPensado
+  }
+  
+  var adicioneNumero = parseInt(prompt("Digite o numero que estou pensando: "));
+  var numeroSorteado = sorteio(10);
+  if(adicioneNumero == numeroSorteado){
+    mostraTexto("ACERTOU, PENSEI EM: " + numeroSorteado)
+  }
+  else{
+    mostraTexto("ALERTA, PENSEI EM OUTRO NUMERO: " + numeroSorteado)
+  }
+
+</script>
+</html>
