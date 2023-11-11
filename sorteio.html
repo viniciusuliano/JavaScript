@@ -22,13 +22,13 @@
     return numeroPensado
   }
   
-  var adicioneNumero = parseInt(prompt("Digite o numero que estou pensando: "));
+  var adicioneNumero = prompt("Digite o numero que estou pensando: ");
   var numeroSorteado = sorteio(10);
   if(adicioneNumero == numeroSorteado){
     mostraTexto("ACERTOU, PENSEI EM: " + numeroSorteado)
   }
   else{
-    mostraTexto("ALERTA, PENSEI EM OUTRO NUMERO: " + numeroSorteado)
+    mostraTexto("ERROU, PENSEI EM: " + numeroSorteado)
   }
 
 </script>
