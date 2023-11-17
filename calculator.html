@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+<body>
+  
+</body>
+<script>
+function mostraTexto(frase){
+  document.write(frase + "<br>")
+}
+
+var n = parseInt(prompt("Qual numero deseja multiplicar? "));
+var y = parseInt(prompt("Até onde deseja multiplicar? "))
+for(var m = 1; m <= y; m+= 1){
+  mostraTexto(m * n);
+}
+</script>
+</html>

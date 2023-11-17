@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copas do Mundo</title>
+</head>
+<body>
+  
+</body>
+<script>
+  function mostraTexto(frase){
+    document.write(frase + "<br>")
+  }
+  var copaDoMundo = parseInt(prompt("Qual ano deve começar? "));
+  var ateQueAno = parseInt(prompt("Até onde?"))
+  while(copaDoMundo < ateQueAno){
+    copaDoMundo += 4;
+
+    mostraTexto(copaDoMundo);
+  }
+</script>
+</html>
