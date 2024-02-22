@@ -18,16 +18,28 @@
     var numeroPensado = Math.round(Math.random() * numero)
     return numeroPensado
   }
-
+  
   for(var tentativas = 0; tentativas < 3; tentativas ++){
     var adicioneNumero = parseInt(prompt("Digite o numero que estou pensando: "));
-    var numeroSorteado = sorteio(10);
+    var numeroSorteado = sorteio(3);
     if(adicioneNumero == numeroSorteado){
       mostraTexto("ACERTOU, PENSEI EM: " + numeroSorteado)
+<<<<<<< HEAD:arquivos/sorteio.html
       break;
+=======
+      if(adicioneNumero < numeroSorteado){
+        mostraTexto("O numero sortedo é maior")
+      }
+    break;
+>>>>>>> 5dc12caab65ce7faebebeef4874485aca0b88d3e:sorteio.html
     }
     else{
-      mostraTexto("ERROU, PENSEI EM: " + numeroSorteado)
+      if(adicioneNumero > numeroSorteado){
+        mostraTexto("ALERT! ESTÁ PERTO NUMERO MENOR")
+      }
+      if(adicioneNumero < numeroSorteado){
+        mostraTexto("ESTÁ PERTO NUMERO MENOR")
+      }
     }
   
 
